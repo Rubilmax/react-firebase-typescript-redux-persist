@@ -1,0 +1,87 @@
+{
+  "users": {
+    "sEmalNBdlsLEemQlsz": {
+      "email": "rmilon@gmail.com",
+      "fullname": "Romain Milon",
+      "balances": {
+        "dSmldEksdncDL": true,
+        "RtYeujjdLakmeoSs": true
+      }
+    },
+    "HgtDxnSwxPommeldikF": {
+      "email": "mariemasson21@gmail.com",
+      "fullname": "Marie Masson",
+      "balances": {
+        "dSmldEksdncDL": true,
+        "RtYeujjdLakmeoSs": true
+      }
+    }
+  },
+  "balances": {
+    "dSmldEksdncDL": {
+      "name": "Balance active",
+      "status": "active",
+      "members": {
+        "sEmalNBdlsLEemQlsz": "Romain",
+        "HgtDxnSwxPommeldikF": "Marie"
+      },
+      "distributions": {
+        "SgTfkmmelDoziTjJ": {
+          "name": "Répartition équitable",
+          "shares": {
+            "sEmalNBdlsLEemQlsz": 1,
+            "HgtDxnSwxPommeldikF": 1
+          }
+        }
+      }
+    },
+    "RtYeujjdLakmeoSs": {
+      "name": "Balance bloquée",
+      "status": "locked",
+      "members": {
+        "sEmalNBdlsLEemQlsz": "Romain",
+        "HgtDxnSwxPommeldikF": "Marie"
+      }
+    }
+  },
+  "transactions": {
+    "BcdKLLBneElMsioZ": {
+      "balance": "dSmldEksdncDL",
+      "amount": 5.0,
+      "spender": "sEmalNBdlsLEemQlsz",
+      "created_by": "sEmalNBdlsLEemQlsz",
+      "created_at": 1597415866816,
+      "last_updated_by": "sEmalNBdlsLEemQlsz",
+      "last_updated_at": 1597415866816,
+      "type": "expense"
+    },
+    "CfdgLkgMeoitnZdds": {
+      "balance": "RtYeujjdLakmeoSs",
+      "amount": 5.0,
+      "spender": "sEmalNBdlsLEemQlsz",
+      "created_by": "sEmalNBdlsLEemQlsz",
+      "created_at": 1597415866816,
+      "last_updated_by": "sEmalNBdlsLEemQlsz",
+      "last_updated_at": 1597415866816,
+      "type": "expense"
+    },
+    "EgfLmzoZrtDncWWskqm": {
+      "balance": "RtYeujjdLakmeoSs",
+      "amount": 5.0,
+      "spender": "HgtDxnSwxPommeldikF",
+      "receiver": "sEmalNBdlsLEemQlsz",
+      "created_by": "HgtDxnSwxPommeldikF",
+      "created_at": 1597415866816,
+      "last_updated_by": "HgtDxnSwxPommeldikF",
+      "last_updated_at": 1597415866816,
+      "type": "refund"
+    }
+  },
+  "recipients": {
+    "FWzZoynJEXGphVIS": {
+      "user": "HgtDxnSwxPommeldikF",
+      "transaction": "BcdKLLBneElMsioZ",
+      "share": 1
+    }
+  }
+}

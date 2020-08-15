@@ -1,0 +1,101 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/flowtype"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true,
+    "mocha": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "flowtype",
+    "import",
+    "jest",
+    "jsx-a11y",
+    "mysticatea",
+    "prefer-object-spread",
+    "prettier",
+    "react"
+  ],
+  "globals": {
+    "jest": false,
+    "expect": false
+  },
+  "settings": {
+    "import/resolver": { "node": { "moduleDirectory": ["node_modules", "src/"] } }
+  },
+  "rules": {
+    "flowtype/define-flow-type": 1,
+    "flowtype/delimiter-dangle": [1, "always-multiline"],
+    "flowtype/semi": [1, "always"],
+    "flowtype/sort-keys": [2, "asc", {"natural": true}],
+    "flowtype/use-flow-type": 1,
+    "import/extensions": 0,
+    "import/external-module-folders": ["node_modules"],
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/order": [
+      2,
+      {
+        "groups": [["builtin", "external"], ["internal", "parent", "sibling", "index"]],
+        "newlines-between": "always"
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight", "to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "mysticatea/no-useless-rest-spread": "error",
+    "newline-before-return": "error",
+    "no-case-declarations": "off",
+    "no-extra-boolean-cast": "off",
+    "no-useless-computed-key": 0,
+    "prefer-object-spread/prefer-object-spread": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+      }
+    ],
+    "react/destructuring-assignment": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-sort-props": [
+      2,
+      {
+        "callbacksLast": false,
+        "shorthandFirst": false,
+        "shorthandLast": false,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": false
+      }
+    ],
+    "react/no-unused-prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "react/require-default-props": 0,
+    "sort-keys": ["error", "asc", {"natural": true}]
+  }
+}
