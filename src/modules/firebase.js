@@ -29,4 +29,6 @@ const openFirebaseUI = () => (
   <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={firebase.auth()} />
 );
 
-export { firebase, openFirebaseUI };
+const db = firebase.database();
+
+export { firebase, openFirebaseUI, db };
